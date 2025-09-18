@@ -20,4 +20,8 @@
       <_ContentIncludedByDefault Remove="wwwroot\exampleJsInterop.js" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Submodules\Gizmo.Web.Components\Gizmo.Web.Components.csproj" />
+    </ItemGroup>
+
 </Project>
