@@ -1,0 +1,3 @@
+[submodule "Submodules/Gizmo.Web.Components"]
+	path = Submodules/Gizmo.Web.Components
+	url = https://github.com/GAMP/Gizmo.Web.Components.git

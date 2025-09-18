@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gizmo.Client.UI.SteamPayment.Module", "Gizmo.Client.UI.SteamPayment.Module\Gizmo.Client.UI.SteamPayment.Module.csproj", "{F80B951E-E593-44F6-90A9-10517BDF3897}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{386E9EB6-79A0-492B-8273-6DF99AF1D595}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gizmo.Web.Components", "Submodules\Gizmo.Web.Components\Gizmo.Web.Components.csproj", "{391C8490-7CF3-473D-A776-DAB09BE4DE2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F80B951E-E593-44F6-90A9-10517BDF3897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80B951E-E593-44F6-90A9-10517BDF3897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80B951E-E593-44F6-90A9-10517BDF3897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80B951E-E593-44F6-90A9-10517BDF3897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{391C8490-7CF3-473D-A776-DAB09BE4DE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{391C8490-7CF3-473D-A776-DAB09BE4DE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{391C8490-7CF3-473D-A776-DAB09BE4DE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{391C8490-7CF3-473D-A776-DAB09BE4DE2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{391C8490-7CF3-473D-A776-DAB09BE4DE2E} = {386E9EB6-79A0-492B-8273-6DF99AF1D595}
+	EndGlobalSection
+EndGlobal
