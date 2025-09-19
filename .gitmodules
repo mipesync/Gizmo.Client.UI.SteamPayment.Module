@@ -16,3 +16,6 @@
 [submodule "Submodules/Gizmo.Client.UI.Services"]
 	path = Submodules/Gizmo.Client.UI.Services
 	url = https://github.com/GAMP/Gizmo.Client.UI.Services.git
+[submodule "Submodules/Gizmo.Client.UI.Resources"]
+	path = Submodules/Gizmo.Client.UI.Resources
+	url = https://github.com/GAMP/Gizmo.Client.UI.Resources.git

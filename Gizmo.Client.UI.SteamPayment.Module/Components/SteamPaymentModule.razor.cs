@@ -1,4 +1,5 @@
-﻿using Gizmo.UI;
+﻿using Gizmo.Client.UI.View.States;
+using Gizmo.UI;
 using Gizmo.Web.Components;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
@@ -18,14 +19,14 @@ public partial class SteamPaymentModule : CustomDOMComponentBase
 
     protected override void OnInitialized()
     {
-        this.SubscribeChange(UserMenuViewState);
+        //this.SubscribeChange(UserMenuViewState);
 
         base.OnInitialized();
     }
 
     public override void Dispose()
     {
-        this.UnsubscribeChange(UserMenuViewState);
+        //this.UnsubscribeChange(UserMenuViewState);
 
         base.Dispose();
     }
