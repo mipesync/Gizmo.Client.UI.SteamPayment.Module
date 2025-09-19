@@ -3,7 +3,10 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Submodules/Gizmo.Client.Shared" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Submodules/Gizmo.Client.UI.Services" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Submodules/Gizmo.Shared" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Submodules/Gizmo.UI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Submodules/Gizmo.Web.Api.Models" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Submodules/Gizmo.Web.Components" vcs="Git" />
   </component>
 </project>

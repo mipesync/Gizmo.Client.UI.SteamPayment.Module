@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gizmo.UI", "Submodules\Gizm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gizmo.Web.Api.Models", "Submodules\Gizmo.Web.Api.Models\Gizmo.Web.Api.Models.csproj", "{96388EB2-06F2-4E20-BEF4-1CC4CB1AFA95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gizmo.Client.UI.Services", "Submodules\Gizmo.Client.UI.Services\Gizmo.Client.UI.Services\Gizmo.Client.UI.Services.csproj", "{61EBC192-532C-4772-90D2-51883A543B3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{96388EB2-06F2-4E20-BEF4-1CC4CB1AFA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96388EB2-06F2-4E20-BEF4-1CC4CB1AFA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96388EB2-06F2-4E20-BEF4-1CC4CB1AFA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61EBC192-532C-4772-90D2-51883A543B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EBC192-532C-4772-90D2-51883A543B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61EBC192-532C-4772-90D2-51883A543B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61EBC192-532C-4772-90D2-51883A543B3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{391C8490-7CF3-473D-A776-DAB09BE4DE2E} = {386E9EB6-79A0-492B-8273-6DF99AF1D595}
@@ -51,5 +57,6 @@ Global
 		{B1D73566-0179-471A-913B-C3EFC9B2F68A} = {386E9EB6-79A0-492B-8273-6DF99AF1D595}
 		{307B7800-1DCA-4D97-ACFF-CA1F492E1542} = {386E9EB6-79A0-492B-8273-6DF99AF1D595}
 		{96388EB2-06F2-4E20-BEF4-1CC4CB1AFA95} = {386E9EB6-79A0-492B-8273-6DF99AF1D595}
+		{61EBC192-532C-4772-90D2-51883A543B3A} = {386E9EB6-79A0-492B-8273-6DF99AF1D595}
 	EndGlobalSection
 EndGlobal
