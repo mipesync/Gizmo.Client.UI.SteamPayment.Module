@@ -21,8 +21,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Submodules\Gizmo.Client.UI.Resources\Gizmo.Client.UI.Resources\Gizmo.Client.UI.Resources.csproj" />
       <ProjectReference Include="..\Submodules\Gizmo.Client.UI.Services\Gizmo.Client.UI.Services\Gizmo.Client.UI.Services.csproj" />
       <ProjectReference Include="..\Submodules\Gizmo.Shared\Gizmo.Shared.csproj" />
+      <ProjectReference Include="..\Submodules\Gizmo.UI\Gizmo.UI\Gizmo.UI.csproj" />
       <ProjectReference Include="..\Submodules\Gizmo.Web.Components\Gizmo.Web.Components.csproj" />
     </ItemGroup>
 
