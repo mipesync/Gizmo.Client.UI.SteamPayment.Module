@@ -1,19 +1,48 @@
 ﻿@namespace Gizmo.Client.UI.SteamPayment.Module.Components
 @using Gizmo.Client.UI.SteamPayment.Module.Components
 @using Gizmo.Web.Components
+@using Microsoft.AspNetCore.Components.Forms
 @inherits Gizmo.Web.Components.CustomDOMComponentBase
 
 <HostedDialog>
     <div class="giz-client-dialog giz-user-online-deposit-dialog" style="z-index: 9999">
         <div class="giz-client-dialog__header">
-            <div class="giz-client-dialog__header__title">@LocalizationService.GetString("GIZ_STEAM_PAYMENT_INTENT_TITLE")</div>
+            <div class="giz-client-dialog__header__title">@LocalizationService.GetLocalizedStringValue(typeof(SteamPaymentIntentDialog), "GIZ_STEAM_PAYMENT_INTENT_TITLE")</div>
             @if (DisplayOptions.Closable)
             {
-                <IconButton SVGIcon="Icons.Close" Variant="ButtonVariants.Text" Size="ButtonSizes.Small" Class="close-btn" onclick="@OnDismissHandler" />
+                <IconButton SVGIcon="Icons.Close_Client" Variant="ButtonVariants.Text" Size="ButtonSizes.Small" Class="close-btn" onclick="@OnDismissHandler" />
             }
         </div>
         <div class="giz-user-online-deposit-dialog__content">
-            <SteamPaymentIntent OnClickPay="@((e) => OnClickPayHandler(ViewState.Amount))" />
+            <div class="giz-user-online-deposit">
+                <div class="giz-user-online-deposit__body">
+                    <EditForm EditContext="@_editContext">
+                        <div>
+                            <TextInput IsTransparent="true"
+                                       Size="InputSizes.Small"
+                                       IsFullWidth="true"
+                                       UpdateOnInput="true"
+                                       TValue="decimal?"
+                                       Value="@_amount"
+                                       ValueChanged="@((value) => SetAmount(value))"
+                                       ValueExpression="@(() => _amount)"
+                                       Label="@LocalizationService.GetLocalizedStringValue(typeof(SteamPaymentIntentDialog), "GIZ_STEAM_PAYMENT_INTENT_AMOUNT")" />
+                        </div>
+                    </EditForm>
+                </div>
+
+                <div class="giz-user-online-deposit__footer">
+                    <Button IsDisabled="@(_amount is null || !_isValid)"
+                            Color="ButtonColors.Accent"
+                            Size="ButtonSizes.ExtraLarge"
+                            IsFullWidth="true"
+                            onclick="@OnClickPayHandlerAsync">
+                        <ChildContent>
+                            <div>@LocalizationService.GetLocalizedStringValue(typeof(SteamPaymentIntentDialog), "GIZ_STEAM_PAYMENT_INTENT")</div>
+                        </ChildContent>
+                    </Button>
+                </div>
+            </div>
         </div>
     </div>
 </HostedDialog>
